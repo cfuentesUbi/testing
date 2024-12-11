@@ -30,6 +30,10 @@ jobs:
       run: npm install eslint --save-dev
       working-directory: ./codebase/rdicidr-0.1.0/
 
+    - name: Install Prettier
+      run: npm install prettier --save-dev
+      working-directory: ./codebase/rdicidr-0.1.0/
+
     - name: Run Linter
       run: npm run lint
       working-directory: ./codebase/rdicidr-0.1.0/
