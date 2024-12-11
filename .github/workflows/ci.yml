@@ -22,8 +22,9 @@ jobs:
         node-version: '15.14.0'
         check-latest: true
 
-    - name: Install dependencies npm@7
-      run: npm install -g npm@7
+    - name: Install dependencies
+      run: npm install -g npm@7 |
+           npm install eslint
       working-directory: ./codebase/rdicidr-0.1.0/
 
     - name: Run Linter
