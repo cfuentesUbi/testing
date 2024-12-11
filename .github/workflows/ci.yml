@@ -23,8 +23,11 @@ jobs:
         check-latest: true
 
     - name: Install dependencies
-      run: npm install -g npm@7 |
-           npm install eslint
+      run: npm install -g npm@7
+      working-directory: ./codebase/rdicidr-0.1.0/
+
+    - name: Install ESLint
+      run: npm install eslint --save-dev
       working-directory: ./codebase/rdicidr-0.1.0/
 
     - name: Run Linter
